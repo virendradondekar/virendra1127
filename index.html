@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netlify Form Example</title>
+  <title>Netlify Form Submission Example</title>
 </head>
 <body>
 
   <h1>Contact Us</h1>
-  <form name="contact" method="POST" data-netlify="true">
+
+  <!-- Form setup for Netlify -->
+  <form name="contact" method="POST" data-netlify="true" action="thank-you.html">
     <label for="name">Name:</label>
     <input type="text" name="name" id="name" required />
     <br><br>
@@ -24,9 +26,7 @@
     <button type="submit">Submit</button>
   </form>
 
-  <script>
-    // Optional: Add any client-side validation or form handling here.
-  </script>
+  <!-- Optional: You can add some JavaScript to handle form submission visually if needed -->
 
 </body>
 </html>
